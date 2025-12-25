@@ -1,0 +1,12 @@
+/* General Sans Typeface - https://www.fontshare.com/fonts/general-sans */
+@import "../assets/fonts/general-sans/css/general-sans.css";
+
+/* Solitude Design Token Library - https://github.com/emanoelviana/solitude-design-token-library/ */
+@import "./themes/solitude-design-tokens/variables.light.css";
+@import "./themes/solitude-design-tokens/variables.dark.css";
+
+/* Tailwind - https://tailwindcss.com/ */
+@import "./themes/tailwind/theme.css";
+
+/* Remixicon - https://remixicon.com/ */
+@import "remixicon/fonts/remixicon.css";
