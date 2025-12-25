@@ -1,4 +1,4 @@
-import { useTheme } from "../../../contexts/theme/UseTheme";
+import { useTheme } from "../../../contexts/theme/UseTheme.jsx";
 import IconButton from "../icon-button/IconButton";
 
 function ToggleTheme({ size = "md" }) {
