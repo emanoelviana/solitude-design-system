@@ -1,14 +1,17 @@
+import { useTheme } from "../../../contexts/useTheme";
 import IconButton from "../icon-button/IconButton";
 
 function ToggleTheme({ size = "md" }) {
+  const { theme, setTheme } = useTheme();
+
   return (
     <IconButton
-      icon={"sun-line"}
+      icon={theme === "dark" ? "moon-line" : "sun-line"}
       size={size}
       iconSize={24}
       variant={"filled"}
-      onClick={() => {}}
-      title={"z"}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      title={theme === "dark" ? "Change to light mode" : "Change to dark mode"}
     />
   );
 }
