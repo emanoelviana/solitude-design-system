@@ -13,7 +13,7 @@ function Navbar({
   return (
     <nav
       className={clsx(
-        `flex justify-center items-center bg-(--surface-neutral-container) border-t border-t-(--border-neutral-subtle) lg:hidden`,
+        `flex justify-center items-center bg-(--background-surface) border-t border-t-(--border-subtle) lg:hidden`,
         className
       )}
       {...props}

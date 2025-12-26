@@ -30,7 +30,7 @@ function App() {
       <AnalyticsTracker />
       <main className="h-full grid grid-rows-[auto_1fr_auto]">
         <Header />
-        <div className="lg:flex overflow-scroll overflow-x-hidden ml-0 lg:ml-70">
+        <div className="lg:flex ml-0 lg:ml-70 overflow-scroll overflow-x-hidden">
           <Sidebar />
           <Outlet />
         </div>

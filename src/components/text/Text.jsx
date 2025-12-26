@@ -5,29 +5,22 @@ import { cva } from "class-variance-authority";
 const textVariants = cva("", {
   variants: {
     variant: {
-      primary: "text-(--text-neutral-primary)",
-      primaryInverse: "text-(--text-inverse-primary)",
-      secondary: "text-(--text-neutral-secondary)",
-      secondaryInverse: "text-(--text-inverse-secondary)",
-      disabled: "text-(--text-neutral-disabled)",
-      disabledInverse: "text-(--text-inverse-disabled)",
-    },
-    size: {
-      sm: "text-md",
-      md: "text-xl",
-      lg: "text-2xl",
+      brand: "text-(--text-brand)",
+      base: "text-(--text-base)",
+      subtle: "text-(--text-subtle)",
+      disabled: "text-(--text-disabled)",
     },
   },
   defaultVariants: {
-    variant: "primary",
+    variant: "base",
   },
 });
 
-function Text({ as = "span", variant, size, children, className, ...props }) {
+function Text({ as = "span", variant, children, className, ...props }) {
   return createElement(
     as,
     {
-      className: clsx(textVariants({ variant, size }), className),
+      className: clsx(textVariants({ variant }), className),
       ...props,
     },
     children

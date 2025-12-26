@@ -7,12 +7,12 @@ function Header() {
   return (
     <header className="w-full flex justify-between items-center py-3 px-6">
       <div className="flex gap-2 items-center">
-        <Text as="h1" className={"text-xl font-medium"} variant={"primary"}>
+        <Text as="h1" className={"text-xl font-medium"} variant={"base"}>
           Solitude
         </Text>
         <Badge>Alpha</Badge>
       </div>
-      <ul id="header-actions" className="flex gap-2">
+      <ul className="flex gap-2">
         <li>
           <IconButton icon={"figma-line"} title="Figma" />
         </li>

@@ -5,11 +5,10 @@ import Icon from "../../icon/Icon";
 const iconButtonVariants = cva("rounded-full cursor-pointer", {
   variants: {
     variant: {
-      filled:
-        "bg-(--surface-neutral-container) hover:bg-(--surface-neutral-contrast)",
+      filled: "bg-(--background-surface) hover:bg-(--background-elevated)",
       outlined:
-        "ring-2 ring-inset ring-(--border-neutral-subtle) hover:ring-(--color-zinc-600) bg-transparent",
-      ghost: "bg-transparent hover:bg-(--surface-neutral-container)",
+        "ring-1 ring-inset ring-(--border-base) hover:ring-(--border-strong) bg-transparent",
+      ghost: "bg-transparent hover:bg-(--background-surface)",
     },
     size: {
       sm: "p-1",

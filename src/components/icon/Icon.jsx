@@ -4,12 +4,10 @@ import clsx from "clsx";
 const iconVariants = cva("flex items-center justify-center", {
   variants: {
     variant: {
-      primary: "text-(--icon-neutral-primary)",
-      primaryInverse: "text-(--icon-inverse-primary)",
-      secondary: "text-(--icon-neutral-secondary)",
-      secondaryInverse: "text-(--icon-inverse-secondary)",
-      disabled: "text-(--icon-neutral-disabled)",
-      disabledInverse: "text-(--icon-inverse-disabled)",
+      brand: "text-(--icon-brand)",
+      primary: "text-(--icon-primary)",
+      secondary: "text-(--icon-secondary)",
+      disabled: "text-(--icon-disabled)",
     },
   },
   defaultVariants: {
