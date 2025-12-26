@@ -7,7 +7,7 @@ const iconButtonVariants = cva("rounded-full cursor-pointer", {
     variant: {
       filled: "bg-(--background-surface) hover:bg-(--background-elevated)",
       outlined:
-        "ring-1 ring-inset ring-(--border-base) hover:ring-(--border-strong) bg-transparent",
+        "text-(--icon-color-base-rest) hover:text-(--icon-color-base-hover) ring-1 ring-inset ring-(--border-subtle) hover:ring-(--border-base) bg-transparent",
       ghost: "bg-transparent hover:bg-(--background-surface)",
     },
     size: {
@@ -36,7 +36,7 @@ function IconButton({
       className={clsx(iconButtonVariants({ variant, size }), className)}
       {...props}
     >
-      <Icon name={icon} size={iconSize} variant={"primary"} />
+      <Icon name={icon} size={iconSize} variant={"empty"} />
     </button>
   );
 }

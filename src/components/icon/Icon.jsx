@@ -5,13 +5,14 @@ const iconVariants = cva("flex items-center justify-center", {
   variants: {
     variant: {
       brand: "text-(--icon-brand)",
-      primary: "text-(--icon-primary)",
-      secondary: "text-(--icon-secondary)",
+      base: "text-(--icon-base)",
+      subtle: "text-(--icon-subtle)",
       disabled: "text-(--icon-disabled)",
+      empty: "",
     },
   },
   defaultVariants: {
-    variant: "primary",
+    variant: "base",
   },
 });
 

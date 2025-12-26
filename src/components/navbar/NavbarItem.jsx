@@ -8,13 +8,12 @@ function NavbarItem({ defaultIcon, selectedIcon, label, action, isActive }) {
         <Icon
           name={isActive ? selectedIcon : defaultIcon}
           size={24}
-          variant={isActive ? "brand" : "secondary"}
+          variant={isActive ? "brand" : "subtle"}
         />
         <Text
           as="h3"
-          className={`text-xs ${
-            isActive ? "text-(--text-brand)" : "text-(--text-subtle)"
-          } font-medium text-center tracking-wider`}
+          className={isActive ? "text-(--text-brand)" : "text-(--text-subtle)"}
+          size={"buttonSmall"}
         >
           {label}
         </Text>

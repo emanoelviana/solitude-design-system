@@ -1,5 +1,6 @@
 import MainCard from "../../components/card/main/MainCard";
 import PlainCard from "../../components/card/plain/PlainCard";
+import Text from "../../components/text/Text";
 
 function FoundationsPage() {
   const gridFoundations = [

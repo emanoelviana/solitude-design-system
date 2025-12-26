@@ -5,9 +5,9 @@ import Text from "../../text/Text";
 
 function Header() {
   return (
-    <header className="w-full fixed backdrop-blur-2xl lg:bg-(--background-base) flex justify-between items-center py-3 px-6">
+    <header className="w-full fixed backdrop-blur-2xl lg:bg-(--background-base) flex justify-between items-center py-3 px-4">
       <div className="flex gap-2 items-center">
-        <Text as="h1" className={"text-xl font-medium"} variant={"base"}>
+        <Text as="h1" size={"titleLarge"} variant={"base"}>
           Solitude
         </Text>
         <Badge>Alpha</Badge>
