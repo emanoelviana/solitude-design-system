@@ -50,7 +50,7 @@ function FoundationsPage() {
   ];
 
   return (
-    <section className="h-full w-full flex flex-col items-center">
+    <section className="min-h-dvh w-full flex flex-col items-center">
       <div className="w-full lg:max-w-240 flex flex-col">
         <PlainCard
           title={"Foundations"}
@@ -58,7 +58,7 @@ function FoundationsPage() {
             "A collection of core foundations that define the visual and structural rules of the system"
           }
         />
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-4 pb-10 lg:pb-16 px-4 lg:px-0">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-4 pb-24 lg:pb-16 px-4 lg:px-0">
           {gridFoundations.map((item, index) => (
             <MainCard
               key={`${index}-${item}`}

@@ -5,7 +5,7 @@ import Text from "../../text/Text";
 
 function Header() {
   return (
-    <header className="w-full flex justify-between items-center py-3 px-6">
+    <header className="w-full fixed backdrop-blur-2xl lg:bg-(--background-base) flex justify-between items-center py-3 px-6">
       <div className="flex gap-2 items-center">
         <Text as="h1" className={"text-xl font-medium"} variant={"base"}>
           Solitude
@@ -14,10 +14,14 @@ function Header() {
       </div>
       <ul className="flex gap-2">
         <li>
-          <IconButton icon={"figma-line"} title="Figma" />
+          <IconButton icon={"figma-line"} title="Figma" variant={"outlined"} />
         </li>
         <li>
-          <IconButton icon={"github-line"} title="GitHub" />
+          <IconButton
+            icon={"github-line"}
+            title="GitHub"
+            variant={"outlined"}
+          />
         </li>
         <li>
           <ToggleTheme />

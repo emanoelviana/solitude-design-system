@@ -9,7 +9,7 @@ function ToggleTheme({ size = "md" }) {
       icon={theme === "dark" ? "moon-line" : "sun-line"}
       size={size}
       iconSize={24}
-      variant={"filled"}
+      variant={"outlined"}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       title={theme === "dark" ? "Change to light mode" : "Change to dark mode"}
     />

@@ -4,9 +4,8 @@ import Text from "../../text/Text";
 function PlainCard({ title, description, className, ...props }) {
   return (
     <div
-      id="hero"
       className={clsx(
-        "flex flex-col gap-6 lg:gap-6 px-6 lg:px-0 pt-8 pb-12 lg:pb-16 lg:pt-20",
+        "flex flex-col gap-6 lg:gap-6 px-6 lg:px-0 pt-24 pb-12 lg:pb-16 lg:pt-20",
         className
       )}
       {...props}
