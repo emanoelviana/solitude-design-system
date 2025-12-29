@@ -5,10 +5,13 @@ import Icon from "../../icon/Icon";
 const iconButtonVariants = cva("rounded-full cursor-pointer", {
   variants: {
     variant: {
-      filled: "bg-(--background-surface) hover:bg-(--background-elevated)",
-      outlined:
-        "text-(--icon-color-base-rest) hover:text-(--icon-color-base-hover) ring-1 ring-inset ring-(--border-subtle) hover:ring-(--border-base) bg-transparent",
-      ghost: "bg-transparent hover:bg-(--background-surface)",
+      filled: `bg-(--background-surface) hover:bg-(--background-elevated)`,
+      outlined: `text-(--icon-color-base-rest) hover:text-(--icon-color-base-hover)
+        ring-1 ring-inset ring-(--border-subtle) hover:ring-(--border-base)
+        bg-transparent`,
+      ghost: `bg-transparent
+        hover:bg-(--background-surface)
+        text-(--text-base)`,
     },
     size: {
       sm: "p-1",
@@ -27,13 +30,19 @@ function IconButton({
   iconSize = 24,
   variant,
   size,
+  link,
   className,
   ...props
 }) {
+  const handleClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <button
       type="button"
       className={clsx(iconButtonVariants({ variant, size }), className)}
+      onClick={() => handleClick(link)}
       {...props}
     >
       <Icon name={icon} size={iconSize} variant={"empty"} />

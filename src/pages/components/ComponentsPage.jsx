@@ -1,13 +1,14 @@
 import PlainCard from "../../components/card/plain/PlainCard";
+import ContentViewColumn from "../../layout/ContentViewColumn";
 
 function ComponentsPage() {
   return (
-    <section>
+    <ContentViewColumn>
       <PlainCard
         title={"Components"}
         description={"Reusable UI components used across the system"}
       />
-    </section>
+    </ContentViewColumn>
   );
 }
 

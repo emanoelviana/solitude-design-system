@@ -1,6 +1,6 @@
 import MainCard from "../../components/card/main/MainCard";
 import PlainCard from "../../components/card/plain/PlainCard";
-import Text from "../../components/text/Text";
+import ContentViewColumn from "../../layout/ContentViewColumn";
 
 function FoundationsPage() {
   const gridFoundations = [
@@ -51,25 +51,28 @@ function FoundationsPage() {
   ];
 
   return (
-    <section className="min-h-dvh w-full flex flex-col items-center">
-      <div className="w-full lg:max-w-240 flex flex-col">
-        <PlainCard
-          title={"Foundations"}
-          description={
-            "A collection of core foundations that define the visual and structural rules of the system"
-          }
-        />
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-4 pb-24 lg:pb-16 px-4 lg:px-0">
-          {gridFoundations.map((item, index) => (
-            <MainCard
-              key={`${index}-${item}`}
-              icon={item.icon}
-              label={item.label}
-            />
-          ))}
-        </div>
+    <ContentViewColumn>
+      <PlainCard
+        title={"Foundations"}
+        description={
+          "A collection of core foundations that define the visual and structural rules of the system"
+        }
+      />
+      <div
+        className={`
+          grid grid-cols-2 lg:grid-cols-2
+          gap-2 lg:gap-4
+          `}
+      >
+        {gridFoundations.map((item, index) => (
+          <MainCard
+            key={`${index}-${item}`}
+            icon={item.icon}
+            label={item.label}
+          />
+        ))}
       </div>
-    </section>
+    </ContentViewColumn>
   );
 }
 

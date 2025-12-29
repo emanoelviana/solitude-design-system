@@ -7,7 +7,10 @@ function PlainCard({ title, description, className, ...props }) {
   return (
     <div
       className={clsx(
-        "flex flex-col gap-4 lg:gap-6 px-4 lg:px-0 pt-24 pb-12 lg:pb-16 lg:pt-20",
+        `
+        flex flex-col
+        gap-4 lg:gap-6
+        `,
         className
       )}
       {...props}
@@ -16,6 +19,7 @@ function PlainCard({ title, description, className, ...props }) {
         as="h1"
         variant={"base"}
         size={width > 840 ? "displayLarge" : "displaySmall"}
+        className={`w-[80%] lg:w-[64%]`}
       >
         {title}
       </Text>
@@ -24,6 +28,7 @@ function PlainCard({ title, description, className, ...props }) {
           as="h3"
           variant={"subtle"}
           size={width > 840 ? "titleLarge" : "titleMedium"}
+          className={`w-[80%] lg:w-[64%]`}
         >
           {description}
         </Text>
