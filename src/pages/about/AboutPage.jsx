@@ -67,7 +67,7 @@ function AboutPage() {
         flex flex-col items-stretch gap-12
         `}
       >
-        <img src="src\assets\images\about\page-hero-display.png" alt="" />
+        <img src="/images/about/page-hero-display.png" alt="" />
         <Text
           as="h1"
           variant={"base"}
@@ -100,7 +100,7 @@ function AboutPage() {
         }
       >
         <img
-          src="src\assets\images\about\development-stack-explained.png"
+          src="/images/about/development-stack-explained.png"
           alt="Pipeline"
         />
         <TextListBlockComposed contentList={techStackList} />
